@@ -1,0 +1,3 @@
+generate table
+.show LAST_GENERATED
+exit

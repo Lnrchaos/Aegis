@@ -1,0 +1,3 @@
+payload for android 15
+inject into target_device
+exit

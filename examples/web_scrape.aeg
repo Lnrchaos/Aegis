@@ -1,0 +1,14 @@
+# Fetch a page and extract all links
+let res = http.get("https://example.com");
+let root = html.parse(res.text);
+let links = root.css("a");
+let out = [];
+let i = 0;
+while (i < links.length) {
+	let a = links[i];
+	set out = out + [a.attr("href")];
+	set i = i + 1;
+}
+
+# Print
+out;

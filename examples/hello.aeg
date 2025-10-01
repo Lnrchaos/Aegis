@@ -1,0 +1,25 @@
+~ Hello World in Aegis
+~ This demonstrates basic language features
+
+set message = "Hello, Aegis!"
+print(message)
+
+~ Define a function
+def greet(name) {
+    return "Hello, " + name + "!"
+}
+
+set greeting = greet("World")
+print(greeting)
+
+~ Demonstrate cybersecurity keywords
+set mode = "blue"
+if mode == "blue" then {
+    print("Blue team mode: Defending system")
+    firewall enable
+    monitor network
+} else {
+    print("Red team mode: Scanning for vulnerabilities")
+    generate payload for windows
+    attack target
+}

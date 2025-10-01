@@ -1,0 +1,5 @@
+[console_scripts]
+aegfmt = aegfmt:main
+aegis = aegis.repl:main
+aegpm = aegpm:main
+aegtest = aegtest:main

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aegis-lang"
+version = "1.0.0"
+description = "Cybersecurity-focused programming language with dual-mode operation"
+authors = [{name = "Aegis Team", email = "team@aegis-lang.org"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pyyaml>=6.0",
+    "toml>=0.10.2",
+    "requests>=2.28.0",
+    "beautifulsoup4>=4.11.0",
+]
+
+[project.scripts]
+aegis = "aegis.repl:main"
+aegpm = "aegpm:main"
+aegfmt = "aegfmt:main"
+aegtest = "aegtest:main"
+
+[project.urls]
+Homepage = "https://github.com/aegis-lang/aegis"
+Repository = "https://github.com/aegis-lang/aegis"
+Issues = "https://github.com/aegis-lang/aegis/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["aegis*", "aegpm*", "aegfmt*", "aegtest*"]

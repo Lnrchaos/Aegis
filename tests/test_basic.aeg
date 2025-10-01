@@ -1,0 +1,29 @@
+~ Basic functionality tests for Aegis
+
+~ Test variable assignment
+set x = 42
+assert x == 42
+
+~ Test string operations
+set name = "Aegis"
+set greeting = "Hello, " + name
+assert greeting == "Hello, Aegis"
+
+~ Test function definition and call
+def add(a, b) {
+    return a + b
+}
+
+set result = add(5, 3)
+assert result == 8
+
+~ Test control flow
+set condition = true
+if condition then {
+    set success = true
+} else {
+    set success = false
+}
+assert success == true
+
+print("All basic tests passed!")
